@@ -1,0 +1,19 @@
+# Ignore project env
+.venv
+
+# Ignore secrets
+.env
+.env.*
+
+# Ignore cache
+*.pyc
+__pycache__/
+
+# testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Ignore todo/
+todo/
+todo.txt
