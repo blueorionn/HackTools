@@ -1,5 +1,6 @@
 import sys
 import argparse
+import random
 
 # GENERAL KNOWLEDGE:
 # An IPv4 address is a 32-bit numerical address used for identifying devices on a network.
@@ -102,6 +103,38 @@ def convert_ip_to_mapped_ipv6(ip: str):
     )
 
 
+def random_ip_base(ip: str):
+    """Converting one of the octets to a random base."""
+
+    octets = [int(o) for o in ip.split(".")]
+    bases = ["hex", "oct"]
+
+    # chosen base and octet
+    chosen_octets = random.randint(0, (len(octets) - 1))
+    chosen_base = random.choice(bases)
+
+    if chosen_base == "hex":
+        converted_ip = []
+
+        for i, o in enumerate(octets):
+            # For chosen index of octects array
+            if i == chosen_octets:
+                converted_ip.append(f"{hex(o)}")
+            else:
+                converted_ip.append(f"{o}")
+    elif chosen_base == "oct":
+        converted_ip = []
+
+        for i, o in enumerate(octets):
+            # For chosen index of octects array
+            if i == chosen_octets:
+                converted_ip.append(f"{oct(o)}")
+            else:
+                converted_ip.append(f"{o}")
+
+    sys.stdout.write(f"Random Base: {'.'.join(converted_ip)} \n")
+
+
 def main():
     parser = argparse.ArgumentParser(
         prog="Ip_obfuscator",
@@ -124,6 +157,7 @@ def main():
     convert_ip_to_hex(ip)
     convert_ip_to_binary(ip)
     convert_ip_to_mapped_ipv6(ip)
+    random_ip_base(ip)
 
 
 if __name__ == "__main__":
