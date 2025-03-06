@@ -136,7 +136,7 @@ def random_ip_base(ip: str):
         for i, o in enumerate(octets):
             # For chosen index of octects array
             if i == chosen_octets:
-                converted_ip.append(f"{oct(o)}")
+                converted_ip.append(f"{oct(o)[2:].zfill(4)}")
             else:
                 converted_ip.append(f"{o}")
 
