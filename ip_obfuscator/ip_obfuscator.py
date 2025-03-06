@@ -83,6 +83,25 @@ def convert_ip_to_binary(ip: str):
     sys.stdout.write(f"Dotted Binary: {s_format} \n")
 
 
+def convert_ip_to_mapped_ipv6(ip: str):
+    """Using IPv4-mapped IPv6 address to epresent an IPv4 address within an IPv6 address"""
+
+    # An IPv4-mapped IPv6 address is a special IPv6 format designed to
+    # represent an IPv4 address within an IPv6 address. It is used
+    # primarily to enable dual-stack systems (those that support both IPv4 and IPv6)
+    # to handle IPv4 connections within an IPv6 context.
+
+    octets = [int(o) for o in ip.split(".")]
+
+    # Converting ipv4 to ipv6
+    first, second, third, fourth = [f"{hex(o)[2:].zfill(2)}".upper() for o in octets]
+
+    sys.stdout.write(f"IPv6 (short): ::FFFF:{first}{second}:{third}{fourth} \n")
+    sys.stdout.write(
+        f"IPv6 (long): 0000:0000:0000:0000:0000:FFFF:{first}{second}:{third}{fourth} \n"
+    )
+
+
 def main():
     parser = argparse.ArgumentParser(
         prog="Ip_obfuscator",
@@ -104,6 +123,7 @@ def main():
     convert_ip_to_octet(ip)
     convert_ip_to_hex(ip)
     convert_ip_to_binary(ip)
+    convert_ip_to_mapped_ipv6(ip)
 
 
 if __name__ == "__main__":
