@@ -65,6 +65,14 @@ def convert_ip_to_octet(ip: str):
     sys.stdout.write(f"Octal: {ip_oct} \n")
 
 
+def convert_ip_to_raw_octet(ip: str):
+    octets = [int(o) for o in ip.split(".")]
+
+    # Convert to base 8
+    ip_oct = ".".join([f"{oct(o)}" for o in octets])
+    sys.stdout.write(f"Raw Octet: {ip_oct} \n")
+
+
 def convert_ip_to_hex(ip: str):
     octets = [int(o) for o in ip.split(".")]
 
@@ -153,6 +161,7 @@ def main():
 
     # conversion of Ip
     convert_ip_to_int(ip)
+    convert_ip_to_raw_octet(ip)
     convert_ip_to_octet(ip)
     convert_ip_to_hex(ip)
     convert_ip_to_binary(ip)
