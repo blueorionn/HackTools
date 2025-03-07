@@ -15,5 +15,5 @@ __pycache__/
 htmlcov/
 
 # Ignore todo/
-todo/
+todo
 todo.txt
