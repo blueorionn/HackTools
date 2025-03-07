@@ -3,7 +3,7 @@
 An IP obfuscator is a tool used to mask, hide, or manipulate an IP address to make it difficult to trace the original source. It is commonly used in cybersecurity, privacy protection, and ethical hacking to anonymize network activity.
 
 <!-- Some Information -->
-*I am a student and knowledge isn't perfect. I am still learning, the knowledge shared below is entirely based on my understanding. If you found any mistake feel free to open an issue.*
+*I am a student who is still learning and my knowledge isn't perfect. The knowledge shared below is entirely based on my understanding. If you found any mistake feel free to open an issue.*
 
 ## Encoding/Obfuscating IP Representation
 
