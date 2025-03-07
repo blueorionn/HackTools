@@ -34,7 +34,7 @@ An IP representation refers to the different ways an IP address can be written o
 
 2. Hexadecimal Format: \
     To convert Pv4 Address into Hexadecimal Representation: \
-    Hex Representation= $Hex(0_1).Hex(0_2).Hex(0_3).Hex(0_4)$
+    Hex Representation = $Hex(0_1).Hex(0_2).Hex(0_3).Hex(0_4)$
 
     Example: \
     Converting `192.168.1.1` to Hexadecimal format.
@@ -46,3 +46,18 @@ An IP representation refers to the different ways an IP address can be written o
     - $1_{10} = 01_{16}$
 
     So, `192.168.1.1` in hex is $C0.A8.01.01$
+
+3. Octadecimal Format: \
+    To convert Pv4 Address into Octal Representation: \
+    Octal Representation = $Oct(0_1).Oct(0_2).Oct(0_3).Oct(0_4)$
+
+    Example: \
+    Converting `192.168.1.1` to octal format.
+
+    Convert each decimal octet to octal:
+    - $192_{10} = 0300_{8}$
+    - $168_{10} = 0250_{8}$
+    - $1_{10} = 0001_{8}$
+    - $1_{10} = 0001_{8}$
+
+    So, `192.168.1.1` in octal is $0300.0250.0001.0001$
