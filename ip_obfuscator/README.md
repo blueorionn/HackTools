@@ -34,7 +34,7 @@ An IP representation refers to the different ways an IP address can be written o
 
 2. Hexadecimal Format: \
     To convert Pv4 Address into Hexadecimal Representation: \
-    Hex Representation=$Hex(0_1).Hex(0_2).Hex(0_3).Hex(0_4)$
+    Hex Representation= $Hex(0_1).Hex(0_2).Hex(0_3).Hex(0_4)$
 
     Example: \
     Converting `192.168.1.1` to Hexadecimal format.
