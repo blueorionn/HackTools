@@ -16,7 +16,7 @@ An IP representation refers to the different ways an IP address can be written o
     An IPv4 address is a 32-bit number that is conceptually divided into four 8-bit segments (or octets). Each octet can represent 256 possible values (0 to 255), which is why we say it's "base 256" in terms of the number of distinct values per octet. However, when you see an IPv4 address in dotted decimal notation (like 192.168.1.1), each of those octets is expressed as a decimal (base 10) number. So, while the underlying data is organized in bytes (base 256), the dotted decimal representation displays these numbers in base 10.
 
     To convert Pv4 Address into a Single Integer Representation:
-    (O_1 \times 256^3) + (O_2 \times 256^2) + (O_3 \times 256^1) + (O_4 \times 256^0)
+    $(O_1 \times 256^3) + (O_2 \times 256^2) + (O_3 \times 256^1) + (O_4 \times 256^0)$
 
     Where:
-    0_1,0_2,0_3,0_4 are the four octets of the IP address.
+    $0_1,0_2,0_3,0_4$ are the four octets of the IP address.
