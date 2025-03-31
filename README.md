@@ -2,18 +2,8 @@
 
 A collection of scripts designed to assist with various ethical hacking tasks. This toolkit contains collection of scripts to match my personal needs.
 
-## 🛠 Installation  
+## License
 
-Clone the repository:
+This project is licensed under the [MIT License](LICENSE).
 
-```bash
-git clone https://github.com/blueorionn/HackTools.git
-cd HackTools
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
+Happy learning and stay secure!
